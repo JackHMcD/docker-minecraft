@@ -45,6 +45,7 @@ FROM base AS runtime
 COPY --from=build /usr/local/ /usr/local/
 COPY --from=build /app /app
 
+#PHP config to enable modules
 COPY ./php.ini /etc/php.ini
 ENV PHPRC=/etc/php.ini
 
@@ -64,7 +65,7 @@ EXPOSE 19132
 #Make phar owned by minecraft user
 RUN chown -R minecraft:minecraft /app
 
-#User and group to run as
+#User and group to run as minecraft
 USER minecraft:minecraft
 
 #Set runtime workdir
