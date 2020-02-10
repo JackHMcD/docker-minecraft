@@ -1,5 +1,5 @@
 FROM openjdk:8-jre AS base
-LABEL maintainer="Micheal Waltz <ecliptik@gmail.com>"
+LABEL maintainer="PPB <pp.bariller@gmail.com>"
 
 #Version of minecraft to use
 ENV MC_VERSION=1.12.2
