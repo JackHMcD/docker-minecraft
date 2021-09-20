@@ -2,7 +2,7 @@ FROM openjdk:8-jre AS base
 LABEL maintainer="PPB <pp.bariller@gmail.com>"
 
 #Version of minecraft to use
-ENV MC_VERSION=1.12.2
+ENV MC_VERSION=1.17.11
 
 #Set inital workdir
 WORKDIR /app
